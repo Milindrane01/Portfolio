@@ -8,7 +8,7 @@ This project is a developer portfolio site showcasing experience, projects, cert
 
 ## Files
 
-- `index 1.html` - Main portfolio page.
+- `index.html` - Main portfolio page.
 - `style.css` - Styling for layout, typography, cards, and responsive design.
 - `script.js` - Site interaction logic and contact form behavior.
 - `profile.jpg` - Profile image used on the portfolio page.
@@ -23,7 +23,7 @@ This project is a developer portfolio site showcasing experience, projects, cert
 
 ## Usage
 
-1. Open `index 1.html` in a web browser.
+1. Open `index.html` in a web browser.
 2. Review and update the content as needed to match your personal details.
 3. For deployment, host the files on any static web server or GitHub Pages.
 
@@ -35,7 +35,7 @@ This project is a developer portfolio site showcasing experience, projects, cert
 ## Notes
 
 - The contact form is currently frontend-only and does not send email without a backend service.
-- Update the file names or links if you want to rename `index 1.html` to `index.html` for cleaner deployment.
+- The main entry point is now `index.html` for optimal Vercel and static host compatibility.
 
 ## Author
 
