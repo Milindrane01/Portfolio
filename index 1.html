@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILIND RANE | Cloud & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MILINDRANE<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#certifications" data-text="Certs">Certifications</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+                <span class="name-line">MILIND</span>
+                <span class="name-line name-highlight shimmer-text">RANE</span>
+            </h1>
+            <div class="hero-title-wrapper">
+                <span class="hero-title-prefix">I'm a</span>
+                <h2 class="hero-title" id="typingText">Cloud & AI Engineer</h2>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-tagline">Architecting scalable cloud systems & building intelligent AI solutions that transform businesses</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-glass">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-comments"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat" data-count="1">
+                    <span class="stat-number">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat" data-count="10">
+                    <span class="stat-number">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat" data-count="5">
+                    <span class="stat-number">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// who am i</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="profile.jpg" alt="Milind Rane" class="profile-photo">
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="about-float-card float-card-1">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud Native</span>
+                    </div>
+                    <div class="about-float-card float-card-2">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Powered</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a <span class="text-highlight">Cloud & AI Engineer</span> passionate about designing scalable cloud architectures 
+                        and building intelligent systems. With expertise spanning AWS, Azure, Kubernetes, 
+                        and modern AI/ML frameworks, I bridge the gap between robust infrastructure and 
+                        cutting-edge artificial intelligence.
+                    </p>
+                    <p class="about-text">
+                        My work focuses on deploying <span class="text-highlight">production-grade ML models</span> on cloud-native platforms, 
+                        automating infrastructure with IaC, and building end-to-end data pipelines that 
+                        power AI applications at scale.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <span>Pune, India</span>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                            <span>ranemilind99@gmail.com</span>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon"><i class="fas fa-phone"></i></div>
+                            <span>+91 9021040688</span>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon"><i class="fas fa-briefcase"></i></div>
+                            <span>Open to Opportunities</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" download>
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// what i do</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-tilt>
+                    <div class="skill-glow"></div>
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Engineering</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Serverless</span>
+                        <span class="skill-tag">CloudFormation</span>
+                        <span class="skill-tag">Helm</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-tilt>
+                    <div class="skill-glow"></div>
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI / ML Engineering</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">MLOps</span>
+                        <span class="skill-tag">SageMaker</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-tilt>
+                    <div class="skill-glow"></div>
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">ArgoCD</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Security</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// my work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-filter="cloud">
+                    <i class="fas fa-cloud"></i> Cloud
+                </button>
+                <button class="filter-btn" data-filter="ai">
+                    <i class="fas fa-brain"></i> AI/ML
+                </button>
+                <button class="filter-btn" data-filter="hybrid">
+                    <i class="fas fa-link"></i> Hybrid
+                </button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="cloud">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <i class="fas fa-network-wired project-icon"></i>
+                            <div class="project-number">01</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-tag">Cloud</div>
+                            <h3>Multi-Cloud Infrastructure Automation</h3>
+                            <p>End-to-end IaC solution using Terraform to provision and manage infrastructure across AWS and Azure with automated compliance checks.</p>
+                            <div class="project-tech">
+                                <span>Terraform</span>
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>GitHub Actions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <i class="fas fa-robot project-icon"></i>
+                            <div class="project-number">02</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-tag">AI/ML</div>
+                            <h3>RAG-Powered Knowledge Assistant</h3>
+                            <p>Enterprise chatbot using Retrieval-Augmented Generation with LangChain, vector databases, and LLMs for intelligent document Q&A.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>LangChain</span>
+                                <span>OpenAI</span>
+                                <span>Pinecone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="hybrid">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <i class="fas fa-server project-icon"></i>
+                            <div class="project-number">03</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-tag">Hybrid</div>
+                            <h3>ML Model Serving on Kubernetes</h3>
+                            <p>Production-grade ML inference platform on EKS with auto-scaling, A/B testing, model versioning, and real-time monitoring.</p>
+                            <div class="project-tech">
+                                <span>Kubernetes</span>
+                                <span>SageMaker</span>
+                                <span>Docker</span>
+                                <span>Prometheus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="cloud">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <i class="fas fa-shield-alt project-icon"></i>
+                            <div class="project-number">04</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-tag">Cloud</div>
+                            <h3>Zero-Trust Cloud Security Framework</h3>
+                            <p>Implemented zero-trust architecture with automated security scanning, IAM policies, and compliance monitoring across cloud environments.</p>
+                            <div class="project-tech">
+                                <span>AWS</span>
+                                <span>IAM</span>
+                                <span>Terraform</span>
+                                <span>CloudTrail</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <div class="project-number">05</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-tag">AI/ML</div>
+                            <h3>Predictive Cloud Cost Optimizer</h3>
+                            <p>AI-powered tool that analyzes cloud spending patterns and predicts future costs, recommending optimization strategies using ML models.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>scikit-learn</span>
+                                <span>AWS</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="hybrid">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <i class="fas fa-project-diagram project-icon"></i>
+                            <div class="project-number">06</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-tag">Hybrid</div>
+                            <h3>Serverless AI Pipeline</h3>
+                            <p>Event-driven ML pipeline using AWS Lambda, Step Functions, and SageMaker for automated model training, evaluation, and deployment.</p>
+                            <div class="project-tech">
+                                <span>Lambda</span>
+                                <span>Step Functions</span>
+                                <span>SageMaker</span>
+                                <span>S3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// credentials</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Data Science with GenAI</h4>
+                    <p>Pwskills (2024)</p>
+                    <div class="cert-badge">Verified</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Introduction to Cloud Computing on AWS</h4>
+                    <p>Udemy (2025)</p>
+                    <div class="cert-badge">Verified</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>Migration Foundations Knowledge Badge</h4>
+                    <p>AWS (incl. labs)</p>
+                    <div class="cert-badge">Verified</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Well-Architected Foundations</h4>
+                    <p>Amazon Web Services</p>
+                    <div class="cert-badge">Verified</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>Well-Architected For Enterprises</h4>
+                    <p>Amazon Web Services</p>
+                    <div class="cert-badge">Verified</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Partner: Advanced Well-Architected Best Practices</h4>
+                    <p>Technical, AWS</p>
+                    <div class="cert-badge">Verified</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-shine"></div>
+                    <div class="cert-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>Deep Learning Driven Lip Reading System</h4>
+                    <p>Indian Patent Application No.: 202521037574 A</p>
+                    <div class="cert-badge">Published 09 May 2025</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// my journey</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ring"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2025 – Present</div>
+                        <h3>Cloud Engineer</h3>
+                        <h4>Teleglobal International Pvt. Ltd., Pune</h4>
+                        <ul>
+                            <li>Engineered CI/CD pipelines using Jenkins, GitHub Actions, Docker, and Terraform, accelerating deployments and eliminating manual release bottlenecks.</li>
+                            <li>Designed end-to-end AWS deployment architectures covering compute, networking, storage, and security for enterprise clients.</li>
+                            <li>Delivered client deployments and migrations, including AWS cloud migrations, application modernization, and infrastructure cutovers.</li>
+                            <li>Managed a dedicated client account under the managed-services engagement, handling all production issues, critical incidents, and operational escalations across cloud infrastructure and application stacks.</li>
+                            <li>Developed Python automation scripts and optimized PostgreSQL queries for data validation, investigation, and reporting.</li>
+                            <li>Executed Well-Architected remediation across all six AWS pillars to improve reliability, security, performance, and cost efficiency.</li>
+                            <li>Advised clients on best-practice cloud solutions, cost optimization strategies, and managed service delivery frameworks.</li>
+                            <li>Led pre-sales technical discussions, BOQ preparation, and Scope of Work documentation for managed and one-time deployment projects.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>AWS</span><span>Jenkins</span><span>Terraform</span><span>Docker</span><span>Python</span><span>Migration</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, cloud architecture challenges, 
+                        or AI/ML opportunities. Feel free to reach out!
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">ranemilind99@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-card-label">Mobile</span>
+                                <span class="contact-card-value">+91 9021040688</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Pune, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Milindrane01" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span class="social-tooltip">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/milind-rane-8a83581bb" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="social-tooltip">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Your Name" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email" placeholder="youremail@example.com" autocomplete="email" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Project Discussion">
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+        <span>Send Message</span>
+        <i class="fas fa-paper-plane"></i>
+    </button>
+    
+    <!-- Status UI Output message block -->
+    <div id="formStatus" class="form-status" style="display:none; margin-top: 15px; padding: 10px; border-radius: 4px;"></div>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">&lt;MILIND RANE /&gt;</a>
+                <p>Designed & Built with <i class="fas fa-heart"></i> for Cloud & AI</p>
+                <p class="footer-copy">&copy; 2026 MILIND RANE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
