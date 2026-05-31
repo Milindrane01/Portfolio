@@ -1,0 +1,13 @@
+# Ignore local portable Git / installer artifacts
+cmd/
+etc/
+mingw64/
+usr/
+MinGit/
+PortableGit/
+*.7z
+*.zip
+*.exe
+.powershell_history
+.DS_Store
+node_modules/
