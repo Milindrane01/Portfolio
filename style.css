@@ -1501,26 +1501,168 @@ ul { list-style: none; }
         justify-content: center;
         gap: 24px;
         backdrop-filter: blur(20px);
+        padding: 0 24px;
     }
     .nav-links.active { display: flex; }
     .nav-links a { font-size: 1.2rem; padding: 12px 24px; }
     .nav-toggle { display: flex; }
-    .hero-stats { flex-direction: column; gap: 16px; padding: 20px 30px; }
-    .stat-divider { width: 40px; height: 1px; }
-    .skills-grid { grid-template-columns: 1fr; }
-    .projects-grid { grid-template-columns: 1fr; }
-    .certs-grid { grid-template-columns: 1fr; }
+    .nav-container {
+        padding: 0 18px;
+    }
+    .hero {
+        padding: 70px 18px 40px;
+    }
+    .hero-orbs { display: none; }
+    #particleCanvas { display: none; }
+    .hero-badge {
+        padding: 6px 14px;
+        font-size: 0.78rem;
+    }
+    .hero-title-wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .hero-tagline {
+        max-width: 100%;
+        margin: 0 auto 28px;
+        font-size: 0.98rem;
+    }
+    .hero-cta {
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+    .hero-stats {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 20px;
+        width: min(100%, 450px);
+        margin: 0 auto;
+    }
+    .stat-divider {
+        width: 40px;
+        height: 1px;
+    }
+    .skills-grid,
+    .projects-grid,
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-image {
+        height: 180px;
+    }
+    .project-content {
+        padding: 20px;
+    }
+    .project-number {
+        top: 16px;
+        right: 16px;
+        font-size: 2.3rem;
+    }
     .form-row { grid-template-columns: 1fr; }
     .section { padding: 80px 0; }
-    .timeline { padding-left: 36px; }
+    .timeline { padding-left: 28px; }
     .timeline-dot { left: -30px; }
-    .float-card-1, .float-card-2 { display: none; }
+    .float-card-1,
+    .float-card-2 { display: none; }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .about-image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .about-text {
+        font-size: 0.95rem;
+    }
+    .about-details {
+        gap: 12px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .contact-card {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .social-links {
+        justify-content: flex-start;
+    }
+    .contact-form {
+        gap: 16px;
+    }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 50px 16px 30px;
+    }
     .hero-name { font-size: 2.5rem; }
+    .hero-greeting { font-size: 1rem; }
+    .hero-title {
+        font-size: 1rem;
+    }
+    .hero-title-prefix {
+        font-size: 1rem;
+    }
+    .hero-tagline {
+        font-size: 0.95rem;
+    }
+    .hero-cta {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
     .section-title { font-size: 1.8rem; }
-    .hero-title-wrapper { flex-direction: column; gap: 4px; }
+    .section { padding: 60px 0; }
+    .project-filters {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 10px 14px;
+        font-size: 0.8rem;
+    }
+    .project-image {
+        height: 160px;
+    }
+    .project-number {
+        font-size: 2rem;
+        top: 12px;
+        right: 14px;
+    }
+    .timeline { padding-left: 22px; }
+    .contact-card {
+        gap: 12px;
+    }
+    .social-links {
+        gap: 10px;
+    }
+    .nav-links {
+        gap: 18px;
+    }
+    .nav-links a {
+        padding: 10px 20px;
+    }
+    .footer {
+        padding: 30px 0;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    .cursor-glow {
+        display: none;
+    }
+    .btn,
+    .project-card-inner,
+    .cert-card,
+    .skill-category {
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
 }
 
 /* ===== Enhanced Subtle Animations ===== */
