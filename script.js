@@ -179,10 +179,21 @@ function typeEffect() {
 setTimeout(typeEffect, 1800);
 
 // ===== Counter Animation =====
+function getYearsFromStartDate(startDate) {
+    const start = new Date(startDate);
+    const now = new Date();
+    const totalMonths = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    const years = totalMonths / 12;
+    return parseFloat(years.toFixed(1));
+}
+
 function animateCounters() {
     const stats = document.querySelectorAll('.stat[data-count]');
     stats.forEach(stat => {
-        const target = parseInt(stat.dataset.count);
+        let target = parseFloat(stat.dataset.count);
+        if (stat.dataset.startDate) {
+            target = getYearsFromStartDate(stat.dataset.startDate);
+        }
         const numberEl = stat.querySelector('.stat-number');
         let current = 0;
         const increment = target / 40;
@@ -192,7 +203,9 @@ function animateCounters() {
                 current = target;
                 clearInterval(timer);
             }
-            numberEl.textContent = Math.floor(current);
+            numberEl.textContent = Number.isInteger(target)
+                ? Math.floor(current)
+                : current.toFixed(1);
         }, 50);
     });
 }
